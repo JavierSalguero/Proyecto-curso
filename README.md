@@ -1,7 +1,7 @@
 # Proyecto-curso
 Trabajo Integrador del Grupo 1 .
 
-Este es un trabajo integrador del grupo 1 integrador por tres estudiantes,(Javier Salguero, Jorge Luna y Diego). 
+Este es un trabajo integrador del grupo 1 integrador por tres estudiantes, (Javier Salguero, Jorge Luna y Diego). 
 
 El cual fue solicitado por los profesores que comprenden el equipo de Argentina Programa 4.0 
 en conjunto con la Universidad Tegnologica Nacional (UTN).

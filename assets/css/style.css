@@ -79,7 +79,7 @@ button p{
 
 
 span{
-  color: #0a0a0a; 
+  color: #fcf9f9; 
 }
 
 
@@ -234,7 +234,7 @@ header i{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cecdcd;
 }
 .bottom-details .column{
   display: flex;
@@ -248,7 +248,7 @@ header i{
   font-size: 40px;
 }
 .column.humidity{
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #dad1d1;
 }
 .column .details{
   margin-left: 3px;

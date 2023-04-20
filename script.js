@@ -22,12 +22,12 @@ locationBtn.addEventListener("click", () =>{
         alert("su navegador no soporta geolocation api");
     }
 });
-
+//consulta  la ciudad que se tipeo
 function requestApi(city){
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=960f38bc6aac5ae5150c3d7e98e03fa2`;
     fetchData();
 }
-
+//consulta la posicion con latitud y longitud que mando el explorador
 function onSuccess(position){
     const {latitude, longitude} = position.coords;
     api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=960f38bc6aac5ae5150c3d7e98e03fa2`;
@@ -48,7 +48,7 @@ function fetchData(){
     });
 }
 
-
+//compara los datos del objeto recibido para saber si carga el icono de clima mostrar
 function weatherDetails(info){
     if(info.cod == "404"){
         infoTxt.classList.replace("pending", "error");
@@ -72,7 +72,7 @@ function weatherDetails(info){
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
             wIcon.src = "icons/rain.svg";
         }
-        
+        //muestra los datos del objeto recibido
         weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
         weatherPart.querySelector(".Clima").innerText = description;
         weatherPart.querySelector(".location span").innerText = `${city}, ${country}`;
